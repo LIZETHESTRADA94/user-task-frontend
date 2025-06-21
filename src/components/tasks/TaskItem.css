@@ -1,0 +1,39 @@
+/* Efecto de deslizamiento en hover */
+.task-hover-slide:hover {
+  transform: translateX(6px);
+  border-left-width: 5px;
+  border-left-color: #3b82f6;
+}
+.task-checkbox-bounce:active {
+  transform: scale(0.9);
+  transition: transform 0.1s ease;
+}
+
+/* Indicador de loading con pulso */
+.task-loading-pulse {
+  position: relative;
+}
+
+.task-loading-pulse::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(59, 130, 246, 0.05);
+  animation: loading-pulse 1.5s ease-in-out infinite;
+  border-radius: inherit;
+}
+
+@keyframes loading-pulse {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 0.8; }
+}
+
+/* Tarea completada con desvanecimiento */
+.task-completed-fade {
+  opacity: 0.6;
+  filter: grayscale(0.3);
+  transition: all 0.3s ease;
+}

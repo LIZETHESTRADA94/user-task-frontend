@@ -1,0 +1,69 @@
+/* Botón principal con gradiente sutil */
+.btn-gradient-subtle {
+  background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+  transition: all 0.3s ease;
+}
+
+.btn-gradient-subtle:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(59, 130, 246, 0.3);
+}
+
+/* Botón con efecto de brillo */
+.btn-shine {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-shine::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+  transition: left 0.5s ease;
+}
+
+.btn-shine:hover::before {
+  left: 100%;
+}
+
+/* Botón de peligro mejorado */
+.btn-danger-enhanced:hover {
+  box-shadow: 0 8px 20px rgba(239, 68, 68, 0.4);
+  transform: translateY(-1px);
+  transition: all 0.2s ease;
+}
+
+/* Spinner personalizado en botones */
+.btn-loading-custom {
+  position: relative;
+}
+
+.btn-loading-custom .spinner {
+  border-top-color: currentColor;
+  border-right-color: transparent;
+  animation: btn-spin 1s linear infinite;
+}
+
+@keyframes btn-spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Botón flotante con pulso */
+.btn-floating-pulse {
+  animation: floating-pulse 2s ease-in-out infinite;
+}
+
+@keyframes floating-pulse {
+  0%, 100% { 
+    box-shadow: 0 8px 24px rgba(59, 130, 246, 0.4); 
+    transform: scale(1);
+  }
+  50% { 
+    box-shadow: 0 12px 32px rgba(59, 130, 246, 0.6);
+    transform: scale(1.02);
+  }
+}

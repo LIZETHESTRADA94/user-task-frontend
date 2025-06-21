@@ -1,0 +1,33 @@
+/* Logo con rotación suave en hover */
+.home-link .header-logo {
+  transition: transform 0.4s ease;
+}
+
+.home-link:hover .header-logo {
+  transform: rotate(15deg) scale(1.05);
+  transition: transform 0.4s ease;
+}
+
+
+/* Menú dropdown con entrada suave */
+.header-dropdown-enter {
+  animation: dropdown-slide 0.2s ease-out;
+}
+
+@keyframes dropdown-slide {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Items del menú con hover suave */
+.header-menu-item:hover {
+  background: rgba(59, 130, 246, 0.08);
+  transform: translateX(4px);
+  transition: all 0.2s ease;
+}
