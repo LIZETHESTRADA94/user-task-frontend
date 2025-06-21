@@ -25,14 +25,14 @@ Una aplicación moderna de gestión de tareas construida con React, Vite y Azure
 - Node.js 16+ 
 - NPM o Yarn
 - Cuenta de Azure con AD B2C configurado
-- Backend API desplegado (ver proyecto relacionado)
+- Backend API desplegado [ver proyecto relacionado](https://github.com/LIZETHESTRADA94/user-task-backend)
 
 ## 🔧 Instalación
 
 1. Clonar el repositorio
 ```bash
-git clone https://github.com/tu-usuario/todo-app-frontend.git
-cd todo-app-frontend
+git clone https://github.com/LIZETHESTRADA94/user-task-frontend.git
+cd user-task-frontend
 ```
 
 2. Instalar dependencias
